@@ -49,7 +49,7 @@ module.exports = function(prepare, filename) {
 
         var contents =
             '(function(){\n' +
-                'var jsModules = ' + JSON.stringify({jsModules: jsModules}) + ';\n' +
+                'var jsModules = ' + JSON.stringify(jsModules) + ';\n' +
                 'contents = contents || {};\n' +
                 'contents.jsModules = contents.jsModules || {};\n' +
                 'for (var name in jsModules) {\n' +
