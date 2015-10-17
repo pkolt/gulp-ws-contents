@@ -50,7 +50,7 @@ module.exports = function(prepare, filename) {
         var contents =
             '(function(){\n' +
                 'var jsModules = ' + JSON.stringify(jsModules) + ';\n' +
-                'contents = contents || {};\n' +
+                'contents = window.contents = window.contents || {};\n' +
                 'contents.jsModules = contents.jsModules || {};\n' +
                 'for (var name in jsModules) {\n' +
                     'if (jsModules.hasOwnProperty(name)) {\n' +
