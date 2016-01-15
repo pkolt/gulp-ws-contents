@@ -24,7 +24,7 @@ module.exports = function(prepare, filename) {
         }
 
         var str = file.contents.toString(),
-            obj = str.match(/^define\(\s*'js!([a-zA-Z0-9\.]+)'/m);
+            obj = str.match(/^define\(\s*['"]js!([a-zA-Z0-9\.]+)['"]/m);
 
         if (obj) {
             var path = file.path,
